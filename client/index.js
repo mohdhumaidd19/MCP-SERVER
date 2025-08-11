@@ -4,8 +4,7 @@ import { GoogleGenAI } from "@google/genai"
 import { Client } from "@modelcontextprotocol/sdk/client/index.js"
 import { SSEClientTransport } from "@modelcontextprotocol/sdk/client/sse.js"
 
-config({ path: '../.env' })  // 👈 Go up one level to find the .env
-
+config({ path: '../.env' })  
 let tools = []
 console.log("my google api key is here ==========",process.env.GEMINI_API_KEY);
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
